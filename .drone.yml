@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+steps:
+- name: plugin
+  image: build-atlassian-sdk:0.13
+  commands:
+  - atlas-mvn package
+  when:
+    event:
+    - push
