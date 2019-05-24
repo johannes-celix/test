@@ -3,7 +3,7 @@ name: default
 
 steps:
 - name: plugin
-  image: celix/build-atlassian-sdk:0.13
+  image: codeclou/docker-atlassian-sdk:sdk-6.3.10
   commands:
   - atlas-mvn package
   when:
